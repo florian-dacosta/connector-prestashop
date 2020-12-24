@@ -117,7 +117,7 @@ class ProductProduct(models.Model):
 class PrestashopProductCombination(models.Model):
     _name = "prestashop.product.combination"
     _inherit = [
-        "prestashop.binding.odoo",
+        "prestashop.binding",
         "prestashop.product.qty.mixin",
     ]
     _inherits = {"product.product": "odoo_id"}

@@ -388,7 +388,7 @@ class TranslatableRecordImporter(AbstractComponent):
     _translatable_fields = {}
     # TODO set default language on the backend
     _default_language = "en_US"
-    _mandatory_translation = True
+    _mandatory_translation = False
 
     def __init__(self, environment):
         """

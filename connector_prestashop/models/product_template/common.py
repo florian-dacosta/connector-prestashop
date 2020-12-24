@@ -90,7 +90,7 @@ class ProductQtyMixin(models.AbstractModel):
 class PrestashopProductTemplate(models.Model):
     _name = "prestashop.product.template"
     _inherit = [
-        "prestashop.binding.odoo",
+        "prestashop.binding",
         "prestashop.product.qty.mixin",
     ]
     _inherits = {"product.template": "odoo_id"}
